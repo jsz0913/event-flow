@@ -1,6 +1,7 @@
 function ev_im_test = extractEventsReadFrames(events,ev_im_test,images)
 start_time = ev_im_test.start_time;
 end_time = min(max(images.i_tstamp),ev_im_test.end_time);
+
 ev_im_test.im_pair = {};
 ev_im_test.ev_bucket = {};
 ev_im_test.t_pair = {};
